@@ -16,8 +16,8 @@ const LoginPage = ({ onLogin }) => {
   return (
     <div>
       <div className='flex bg-lime-100'>
-        <img src="https://play-lh.googleusercontent.com/Im3CE-kmZJmZMC8pkhpCj7tGznPI6LC1EjhaTJ3E6Cdh_mgW5VxF_joZK31XWwZPmkT5" alt="logo" className='w-20 rounded-full p-2 ml-2' />
-        <div className="text-4xl text-[#4A4A4A] font-semibold flex justify-center py-4 absolute left-1/3">Welcome to Deals Dray</div>
+        <img src="https://www.pngkey.com/png/detail/50-500989_employees-new-york-times-app-icon.png" alt="logo" className='w-20 rounded-full p-2 ml-2' />
+        <div className="text-4xl text-[#4A4A4A] font-semibold flex justify-center py-4 absolute left-24">Welcome to the App</div>
       </div>
     
     <div className="flex items-center justify-center h-screen bg-gray-200" style={{
