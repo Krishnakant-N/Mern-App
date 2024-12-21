@@ -39,10 +39,6 @@ const userSchema = new mongoose.Schema({
     enum: ["MCA", "BCA", "BSC"],
     required: true,
   },
-  imgUpload: {
-    type: String, 
-    required: true,
-  },
   createdDate: {
     type: Date,
     default: function () {
@@ -73,11 +69,8 @@ app.post("/demo", async (req, res) => {
   user.designation = req.body.designation;
   user.gender = req.body.gender;
   user.course = req.body.course;
-  user.imgUpload = req.body.imgUpload;
   user.createdDate = req.body.createdDate;
   const doc = await user.save();
-
-  console.log(doc);
   res.json(doc);
 });
 

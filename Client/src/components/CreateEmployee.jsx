@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 function CreateEmployee() {
 
@@ -155,21 +155,6 @@ function CreateEmployee() {
             BSC
           </label>
         </div>
-      </div>
-  
-      {/* Image Upload */}
-      <div className="mb-4">
-        <label htmlFor="imgUpload" className="block text-gray-700 font-medium mb-2">
-          Image Upload
-        </label>
-        <input
-          type="file"
-          name="imgUpload"
-          id="imgUpload"
-          className="w-full"
-          onChange={handleChange}
-          accept="image/png, image/jpeg"
-        />
       </div>
   
       {/* Submit Button */}

@@ -6,8 +6,8 @@ const Navbar = ({ adminName, onLogout, onNavigate }) => {
       <div className="flex justify-between items-center">
         <div className="flex space-x-4">
           <img
-            src='https://play-lh.googleusercontent.com/Im3CE-kmZJmZMC8pkhpCj7tGznPI6LC1EjhaTJ3E6Cdh_mgW5VxF_joZK31XWwZPmkT5'
-            className="cursor-pointer hover:text-gray-300 w-16 rounded-full ml-2"
+            src='https://www.pngkey.com/png/detail/50-500989_employees-new-york-times-app-icon.png'
+            className="cursor-pointer hover:text-gray-300 w-14 rounded-full ml-2"
             onClick={() => onNavigate('home')}
           />
         </div>

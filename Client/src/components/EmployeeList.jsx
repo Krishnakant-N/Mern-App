@@ -19,33 +19,31 @@ const EmployeeList = () => {
 
   return(
     <div className="p-8">
-      <h1 className="text-2xl font-bold mb-4">Employee List</h1>
+      <h1 className="text-3xl font-bold mb-4">Employee List</h1>
       <table className="w-full border-4  border-dashed border-gray-400">
         <thead>
           <tr className="border-4 border-gray-400">
-            <th align="left">Unique ID</th>
-            <th align="left">Image</th>
-            <th align="left">Name</th>
-            <th align="left">Email</th>
-            <th align="left">Mobile No.</th>
-            <th align="left">Designation</th>
-            <th align="left">Gender</th>
-            <th align="left">Course</th>
-            <th align="left">Create date</th>
+            <th className="px-4" align="left">Unique ID</th>
+            <th className="px-4" align="left">Name</th>
+            <th className="px-4" align="left">Email</th>
+            <th className="px-4" align="left">Mobile No.</th>
+            <th className="px-4" align="left">Designation</th>
+            <th className="px-4" align="left">Gender</th>
+            <th className="px-4" align="left">Course</th>
+            <th className="px-4" align="left">Create date</th>
           </tr>
         </thead>
         <tbody>
           {users.map((user) => (
             <tr key={user._id}>
-              <td>{user._id}</td>
-              <td>{user.imageUpload}</td>
-              <td>{user.username}</td>
-              <td><a href={user.email}>{user.email}</a></td>
-              <td>{user.mobile}</td>
-              <td>{user.designation}</td>
-              <td>{user.gender}</td>
-              <td>{user.course}</td>
-              <td>{user.createdDate}</td>
+              <td className="px-4 py-2">{user._id}</td>
+              <td className="px-4 py-2">{user.username}</td>
+              <td className="px-4 py-2"><a href={user.email}>{user.email}</a></td>
+              <td className="px-4 py-2">{user.mobile}</td>
+              <td className="px-4 py-2">{user.designation}</td>
+              <td className="px-4 py-2">{user.gender}</td>
+              <td className="px-4 py-2">{user.course}</td>
+              <td className="px-4 py-2">{user.createdDate}</td>
             </tr>
           ))}
         </tbody>
