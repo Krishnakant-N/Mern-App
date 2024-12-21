@@ -6,7 +6,7 @@ const EmployeeList = () => {
 
     const getUsers = async () => {
 
-    const response = await fetch("http://localhost:3000/demo", {
+    const response = await fetch(import.meta.env.VITE_SERVER_URL ||"http://localhost:3000/demo", {
       method: "GET",
     })
     const data = await response.json()

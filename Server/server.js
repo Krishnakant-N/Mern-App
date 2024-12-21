@@ -7,7 +7,7 @@ require("dotenv").config();
 main().catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/appIntern");
+  await mongoose.connect(process.env.MONGODB_URL || "mongodb://127.0.0.1:27017/appIntern");
   console.log("database connected");
 }
 

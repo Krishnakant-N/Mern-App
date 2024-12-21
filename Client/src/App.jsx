@@ -9,9 +9,9 @@ const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [adminName, setAdminName] = useState('');
   const [currentPage, setCurrentPage] = useState('home');
-  const [employees, setEmployees] = useState([]); // Store employee data
+  const [employees, setEmployees] = useState([]); 
 
-  // Load login state and admin name from localStorage on component mount
+  
   useEffect(() => {
     const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
     const storedAdminName = localStorage.getItem('adminName');
